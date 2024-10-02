@@ -10,7 +10,7 @@ from dotenv import load_dotenv, find_dotenv
 
 load_dotenv(find_dotenv())
 
-API_TOKEN = os.getenv("API_TOKEN")
+API_TOKEN = os.getenv("HF_TOKEN")
 
 class RetornaModelosHuggingFaceArgs(BaseModel):
     path: Optional[str] = Field(None, description="Caminho opcional da API para acessar modelos especificos")
